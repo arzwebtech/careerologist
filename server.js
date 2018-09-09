@@ -4,31 +4,43 @@ app.set('view engine', 'ejs')
 app.use(express.static('views'));
 
 app.get('/', function(req, res){
-    res.render('index',{title : "Home | Careeologist"})
+    res.render('admin/login', {title : "Admin Login | Beauteeza"})
 });
 
-app.get('/admin', function(req, res){
-    res.render('admin/login',{title : "Admin Login | Careeologist"})
+app.post('/', function(req, res){
+    res.redirect('admin/dashboard')
 });
 
 app.get('/admin/dashboard', function(req, res){
-    res.render('admin/dashboard',{title : "Dashboard Admin | Careeologist"})
+    res.render('admin/dashboard', {title : "Dashboard Admin | Beauteeza"})
 });
 
-app.get('/about', function(req, res){
-    res.render('about', {title : "About Us | Careeologist"})
+app.get('/admin/salons-lists', function(req, res){
+    res.render('admin/salons-lists', {title : "Salons List | Beauteeza"})
 });
 
-app.get('/contact', function(req, res){
-    res.render('contact', {title : "Contact Us | Careeologist"})
+app.get('/admin/service-lists', function(req, res){
+    res.render('admin/service-lists', {title : "Service List | Beauteeza"})
 });
 
-app.get('/signin', function(req, res){
-    res.render('signin', {title : "Sign In | Careeologist"})
+app.get('/admin/customer-lists', function(req, res){
+    res.render('admin/customer-lists', {title : "Customer List | Beauteeza"})
 });
 
-app.get('/book-an-appointment', function(req, res){
-    res.render('book-an-appointment', {title : "Book an Appointment | Careeologist"})
+app.get('/admin/order-lists', function(req, res){
+    res.render('admin/order-lists', {title : "Order List | Beauteeza"})
+});
+
+app.get('/admin/help-and-support', function(req, res){
+    res.render('admin/help-and-support', {title : "Help and Support | Beauteeza"})
+});
+
+app.get('/admin/manage-payment', function(req, res){
+    res.render('admin/manage-payment', {title : "Manage Payment | Beauteeza"})
+});
+
+app.get('/admin/settings', function(req, res){
+    res.render('admin/settings', {title : "Settings | Beauteeza"})
 });
 
 app.listen(3000)

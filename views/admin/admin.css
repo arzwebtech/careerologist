@@ -555,8 +555,26 @@ header {
 .modal-header.login-header {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
 /*Main CSS*/
 
+.program {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #122143;
+    min-height: 200px;
+    color:#fff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
 
 
 

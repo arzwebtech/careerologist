@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <% include ../partials/head %>
+<body>
+
+<body class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                <div class="logo" style="padding:30px;">
+                    <a hef="home.html" style="font-size:33px;color:#fff;">
+                        Beauteeza
+                    </a>
+                </div>
+                <div class="navi">
+                    <% include ../partials/navbar %>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+                <div class="row">
+                    <header>
+                        <div class="col-md-7">
+                            <nav class="navbar-default pull-left">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                            </nav>
+                            <div class="search hidden-xs hidden-sm">
+                                <input type="text" placeholder="Search" id="search">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="header-rightside">
+                                <ul class="list-inline header-top pull-right">
+                                    
+                                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="add-project dropdown-toggle" data-toggle="dropdown" style="color:#fff;"> Admin
+                                            <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="navbar-content">
+                                                    <span>Nadeem Shaikh</span>
+                                                    <p class="text-muted small">
+                                                        nadeem@beuteeza.com
+                                                    </p>
+                                                    <div class="divider">
+                                                    </div>
+                                                    <a href="#" class="view btn-sm active">Logout</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div class="user-dashboard">
+                    <h1>List Of Salons</h1>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 gutter">
+                        
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-list">    
+                                        <table class="table table-striped font-18">
+                                            <thead>
+                                                <tr>
+                                                <th>Salon Name</th>
+                                                <th>Location</th>
+                                                <th>Total Orders</th>
+                                                <th>Ratings</th>
+                                                <th>Status</th>
+                                                <th>Manage</th>
+                                                <th colspan="3">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <td><a href="#">Bodycraft Spa & Salon</a></td>
+                                                <td>Whitefield</td>
+                                                <td>536</td>
+                                                <td><a href="#">4.3</a></td>
+                                                <td>Active</td>
+                                                <td><a href="#">Manage Payment</a></td>
+                                                <td><a href="#">View</a></td>
+                                                <td><a href="#">Deactivate</a></td>
+                                                <td><a href="#">Delete</a></td>
+                                                </tr>
+                                                <tr>
+                                                <td><a href="#">Play Salon</a></td>
+                                                <td>Marathalli</td>
+                                                <td>274</td>
+                                                <td><a href="#">4.5</a></td>
+                                                <td>Active</td>
+                                                <td><a href="#">Manage Payment</a></td>
+                                                <td><a href="#">View</a></td>
+                                                <td><a href="#">Deactivate</a></td>
+                                                <td><a href="#">Delete</a></td>
+                                                </tr>
+                                                <tr>
+                                                <td><a href="#">Sense Salon And Spa</a></td>
+                                                <td>Siddhapura</td>
+                                                <td>118</td>
+                                                <td><a href="#">2.3</a></td>
+                                                <td>Active</td>
+                                                <td><a href="#">Manage Payment</a></td>
+                                                <td><a href="#">View</a></td>
+                                                <td><a href="#">Deactivate</a></td>
+                                                <td><a href="#">Delete</a></td>
+                                                </tr>
+                                                <tr>
+                                                <td><a href="#">Mirror Image</a></td>
+                                                <td>Whitefield</td>
+                                                <td>216</td>
+                                                <td><a href="#">4.8</a></td>
+                                                <td>Active</td>
+                                                <td><a href="#">Manage Payment</a></td>
+                                                <td><a href="#">View</a></td>
+                                                <td><a href="#">Deactivate</a></td>
+                                                <td><a href="#">Delete</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+</body>
+</html>

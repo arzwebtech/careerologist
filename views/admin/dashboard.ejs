@@ -1,38 +1,20 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
-
-    <title><%= title %></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="admin.css" rel="stylesheet" id="bootstrap-css">
-
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-</head>
+    <% include ../partials/head %>
 <body>
+
 <body class="home">
     <div class="container-fluid display-table">
         <div class="row display-table-row">
             <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
                 <div class="logo" style="padding:30px;">
                     <a hef="home.html" style="font-size:33px;color:#fff;">
-                        Careerologist
+                        Beauteeza
                     </a>
                 </div>
                 <div class="navi">
-                    <ul>
-                        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Couselors List</span></a></li>
-                        <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Students List</span></a></li>
-                        <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Appointments List</span></a></li>
-                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Statistics</span></a></li>
-                        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Payment Management</span></a></li>
-                        <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li>
-                        <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Logout</span></a></li>
-                    </ul>
+                    <% include ../partials/navbar %>
                 </div>
             </div>
             <div class="col-md-10 col-sm-11 display-table-cell v-align">
@@ -57,7 +39,7 @@
                         <div class="col-md-5">
                             <div class="header-rightside">
                                 <ul class="list-inline header-top pull-right">
-                                    <li class="hidden-xs"><a href="#" class="add-project" data-toggle="modal" data-target="#add_project">Add Counselor</a></li>
+                                    
                                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                                     <li class="dropdown">
                                         <a href="#" class="add-project dropdown-toggle" data-toggle="dropdown" style="color:#fff;"> Admin
@@ -65,9 +47,9 @@
                                         <ul class="dropdown-menu">
                                             <li>
                                                 <div class="navbar-content">
-                                                    <span>Deep</span>
+                                                    <span>Nadeem Shaikh</span>
                                                     <p class="text-muted small">
-                                                        deep@Careerologist.com
+                                                        nadeem@beauteeza.com
                                                     </p>
                                                     <div class="divider">
                                                     </div>
@@ -82,85 +64,87 @@
                     </header>
                 </div>
                 <div class="user-dashboard">
-                    <h1>Hello, Careerologist Admin</h1>
+                    <h1>Hello, Beauteeza Admin</h1>
                     <div class="row">
-                        <div class="col-md-5 col-sm-5 col-xs-12 gutter">
-
-                            <div class="sales">
-                                <h2>Your Sale</h2>
-
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span>Period:</span> Last Year
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a href="#">2012</a>
-                                        <a href="#">2014</a>
-                                        <a href="#">2015</a>
-                                        <a href="#">2016</a>
+                        <div class="col-md-12 col-sm-12 col-xs-12 gutter">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="program">
+                                        <i class="fa fa-handshake-o color-white fa-5x" aria-hidden="true"></i>
+                                        <h3>200</h3>
+                                        <h3>New Users</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="program">
+                                        <i class="fa fa-handshake-o color-white fa-5x" aria-hidden="true"></i>
+                                        <h3>2504</h3>
+                                        <h3>Total Users</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="program">
+                                        <i class="fa fa-handshake-o color-white fa-5x" aria-hidden="true"></i>
+                                        <h3>5746</h3>
+                                        <h3>Total Bookings</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="program">
+                                        <i class="fa fa-handshake-o color-white fa-5x" aria-hidden="true"></i>
+                                        <h3>5735</h3>
+                                        <h3>Service Delivered</h3>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-7 col-sm-7 col-xs-12 gutter">
 
-                            <div class="sales report">
-                                <h2>Report</h2>
-                                <div class="btn-group">
-                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span>Period:</span> Last Year
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a href="#">2012</a>
-                                        <a href="#">2014</a>
-                                        <a href="#">2015</a>
-                                        <a href="#">2016</a>
+                            <div class="row margin-top-20">
+                                <div class="col-md-3">
+                                    <div class="program">
+                                        <i class="fa fa-handshake-o color-white fa-5x" aria-hidden="true"></i>
+                                        <h3>354</h3>
+                                        <h3>New Salons</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="program">
+                                        <i class="fa fa-handshake-o color-white fa-5x" aria-hidden="true"></i>
+                                        <h3>6853</h3>
+                                        <h3>Total Salons</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="program">
+                                        <i class="fa fa-handshake-o color-white fa-5x" aria-hidden="true"></i>
+                                        <h3>535395</h3>
+                                        <h3>Amount Collected</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="program">
+                                        <i class="fa fa-handshake-o color-white fa-5x" aria-hidden="true"></i>
+                                        <h3>35354</h3>
+                                        <h3>Total Revenue</h3>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>Recent Activities</h2>
+                                    <hr/>
+                                    <p class="text-justify font-18">A new salon has been added into the system in your system. See the profile and verify it.. <a href="#" class="">[check here]</a></p>
+            
+                                    <p class="text-justify font-18">The <a href="#" class="">[Salon Name]</a> has been requested for the amount. See the request by  clicking here <a href="#" class="">[paying online]</a></p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+   </div>
 
-    </div>
-
-
-
-    <!-- Modal -->
-    <div id="add_project" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header login-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Add Project</h4>
-                </div>
-                <div class="modal-body">
-                            <input type="text" placeholder="Project Title" name="name">
-                            <input type="text" placeholder="Post of Post" name="mail">
-                            <input type="text" placeholder="Author" name="passsword">
-                            <textarea placeholder="Desicrption"></textarea>
-                    </div>
-                <div class="modal-footer">
-                    <button type="button" class="cancel" data-dismiss="modal">Close</button>
-                    <button type="button" class="add-project" data-dismiss="modal">Save</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</body>	<script type="text/javascript">
-	$(document).ready(function(){
-   $('[data-toggle="offcanvas"]').click(function(){
-       $("#navigation").toggleClass("hidden-xs");
-   });
-});
-
-
-	</script>
 </body>
 </html>
